@@ -1,0 +1,43 @@
+#######################
+# Aurea Central Jervis Example
+#######################
+# User guide and documentation can be found at: https://github.com/trilogy-group/aurea-central-jervis-example
+# This project is based on https://github.com/aurea-central-jervis-example/aurea-central-jervis
+
+language: java
+
+before_install:
+  - echo "In before install"
+
+install:
+  - echo "Gradle is not seen on root user"
+  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
+
+env:
+ - Test1="test"
+
+before_script:
+  - echo "this is before script section"
+  - echo "it will contain steps executed before the script section starts"
+
+stability: None
+
+branches:
+  only:
+    - master
+    - release
+    - develop
+    - feature
+
+cache:
+  directories:
+    - ${HOME}/.m2
+    - ${HOME}/.gradle
+    - ${HOME}/.sdkman
+
+
+jenkins:
+  platform: docker
+  os: ubuntu1604
+
+
