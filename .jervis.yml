@@ -12,6 +12,8 @@ before_install:
 
 install:
   - echo "Gradle is not seen on root user"
+  - whoami
+  - pwd
 #  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
 
 env:
@@ -20,6 +22,8 @@ env:
 before_script:
   - echo "this is before script section"
   - echo "it will contain steps executed before the script section starts"
+  - whoami
+  - pwd
 
 stability: None
 
