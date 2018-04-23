@@ -27,7 +27,7 @@ before_script:
 
 script:
   - whoami
-  - java
+  - mvn
   - gradle check
 
 stability: None
