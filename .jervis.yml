@@ -25,6 +25,10 @@ before_script:
   - whoami
   - pwd
 
+script:
+  - whami
+  - gradle check
+
 stability: None
 
 branches:
