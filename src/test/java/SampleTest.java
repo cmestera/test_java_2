@@ -7,6 +7,6 @@ public class SampleTest {
     @Test
     public void shouldDoABasicTest() throws Exception {
         System.out.println("In the simple test");
-        assertTrue("My test condition",false);
+        assertTrue("My test condition",true);
     }
 }

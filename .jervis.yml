@@ -13,10 +13,8 @@ before_install:
   - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
 
 #install:
-#  - echo "Gradle is not seen on root user"
-#  - whoami
-#  - pwd
-#  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
+#  - echo "Here we can override build"
+
 
 env:
  - Test1="test"
@@ -27,10 +25,7 @@ before_script:
   - pwd
 
 #script:
-#  - whoami
-#  - sudo su - jenkins
-#  - mvn
-#  - gradle check
+#  - echo "Here we can override test"
 
 stability: None
 
