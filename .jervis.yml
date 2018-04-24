@@ -10,7 +10,7 @@ before_install:
   - echo "In before install"
   - whoami
   - echo "Gradle is not seen on root user"
-#  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
+  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
 
 #install:
 #  - echo "Gradle is not seen on root user"
