@@ -8,12 +8,14 @@ language: java
 
 before_install:
   - echo "In before install"
-  - echo "I am $(whoami)"
-
-install:
-  - echo "Gradle is not seen on root user"
   - whoami
-  - pwd
+  - echo "Gradle is not seen on root user"
+#  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
+
+#install:
+#  - echo "Gradle is not seen on root user"
+#  - whoami
+#  - pwd
 #  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
 
 env:
@@ -21,15 +23,14 @@ env:
 
 before_script:
   - echo "this is before script section"
-  - echo "it will contain steps executed before the script section starts"
   - whoami
   - pwd
 
-script:
-  - whoami
-  - sudo su - jenkins
-  - mvn
-  - gradle check
+#script:
+#  - whoami
+#  - sudo su - jenkins
+#  - mvn
+#  - gradle check
 
 stability: None
 
