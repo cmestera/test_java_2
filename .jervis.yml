@@ -7,11 +7,10 @@
 language: java
 
 before_install:
-  - bash
   - echo "In before install"
+  - echo $PATH
   - bash
-  - whoami
-  - echo "Gradle is not seen on root user"
+  - echo $PATH
 #  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
 
 #install:
