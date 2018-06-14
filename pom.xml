@@ -5,14 +5,14 @@
   <groupId>cmester</groupId>
   <artifactId>test-java2</artifactId>
   <packaging>jar</packaging>
-  <version>0.3</version>
+  <version>0.4-SNAPSHOT</version>
   <name>godel</name>
 
   <scm>
     <connection>scm:git:https://github.com/cmestera/test_java_2.git</connection>
     <url>http://github.com/cmestera/test_java_2</url>
     <developerConnection>scm:git:https://github.com/cmestera/test_java_2.git</developerConnection>
-    <tag>v0.3</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <!--<scm>-->
