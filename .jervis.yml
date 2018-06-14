@@ -13,8 +13,9 @@ before_install:
   - echo $PATH
 #  - export PATH=$PATH:/home/jenkins/.sdkman/candidates/gradle/current/bin
 
-#install:
-#  - echo "Here we can override build"
+install:
+  - echo "Here we can override build"
+  - bash gradle assemble
 
 
 env:
