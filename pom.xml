@@ -3,10 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cmester</groupId>
-  <artifactId>test-java2</artifactId>
-  <packaging>jar</packaging>
-  <version>0.4-SNAPSHOT</version>
-  <name>godel</name>
+  <artifactId>test-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>0.1-SNAPSHOT</version>
+
+
+  <modules>
+    <module>code/module1</module>
+    <module>code/module2</module>
+  </modules>
 
   <scm>
     <connection>scm:git:https://github.com/cmestera/test_java_2.git</connection>

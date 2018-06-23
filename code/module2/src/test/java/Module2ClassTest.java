@@ -2,11 +2,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class SampleTest {
-
+public class Module2ClassTest {
     @Test
     public void shouldDoABasicTest() throws Exception {
-        System.out.println("In the simple test");
-        assertTrue("My test condition",true);
+        assertTrue("My test condition",Module2Class.testedMethod());
     }
 }
