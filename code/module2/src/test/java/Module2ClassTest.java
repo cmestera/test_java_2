@@ -4,7 +4,13 @@ import static org.junit.Assert.assertTrue;
 
 public class Module2ClassTest {
     @Test
-    public void shouldDoABasicTest() throws Exception {
+    public void shouldCoverTestedMethod() throws Exception {
         assertTrue("My test condition",Module2Class.testedMethod());
     }
+
+    @Test
+    public void shouldCoverTestedMethod2() throws Exception {
+        assertTrue("My test condition",Module2Class.testedMethod2());
+    }
+
 }

@@ -4,7 +4,7 @@ public class Module2Class {
         return true;
     }
 
-    public static boolean untestedMethod() {
+    public static boolean testedMethod2() {
         return true;
     }
 
